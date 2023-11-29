@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--titulo-->
+    <title>::PURE CSS::</title>
+    <!--conexão ao arquivo bootstrap-->
+    <link rel="stylesheet" href="https://purecss.io/css/pure/pure-min.css">
+    <link rel="stylesheet" href="https://purecss.io/layouts/side-menu/styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+
+
+
+    <!--conexão ao arquivo de script js-->
+    <script src="https://purecss.io/js/ui.js"></script>
+    <!--conexão ao arquivo css-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+ 
+<body>
+    
+    <!--inicio menu lateral-->
+    <div id="layout">
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Ícone de hambúrguer -->
+            <span></span>
+        </a>
+ 
+        <div id="menu">
+            <div class="pure-menu">
+                <a class="pure-menu-heading" href="https://www.geeksforgeeks.org/bootstrap/?ref=shm_outind">Pure CSS</a>
+                                 
+                <ul class="pure-menu-list">
+                    
+                    <li class="pure-menu-item">
+                        <a href="index.html" class="pure-menu-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="pure-menu-item"> 
+                        <a href="botoes.html" class="pure-menu-link">
+                            Botões
+                        </a>
+                    </li>
+
+                    <li class="pure-menu-item"> 
+                        <a href="formulario.html" class="pure-menu-link">
+                            Formulários
+                        </a>
+                    </li>
+                    
+                    <li class="pure-menu-item">
+                        <a href="tabelas_grades.html" class="pure-menu-link">
+                            Tabelas
+                        </a>
+                    </li>
+
+                    <li class="pure-menu-item">
+                        <a href="album_fotos.html" class="pure-menu-link">
+                            Álbum de Fotos
+                        </a>
+                    </li>
+                    
+                    <li class="pure-menu-item menu-item-divided pure-menu-selected">
+                        <a href="sobre.html" class="pure-menu-link">
+                            Sobre
+                        </a>
+                    </li>
+                
+                </ul>
+            </div>
+        </div>
+        <!--fim menu lateral-->
+
+    <!--inicio corpo site-->
+    <div id="main">
+            <div class="header">
+                
+                <img src="img/logo.png" class="logo" alt="logo">
+                <br><br>
+            </div>
+ 
+            <div class="content">
+                <h2>Bootstrap Forms (Formulários)</h2>  
+                
+                <p class="texto1">
+                    Exemplos, instruções para estilizar campos de formulários, opções de layout e componentes personalizados para criar uma grande variedade de formulários.
+                </p>
+            <h3>CSS simples para formulários HTML</h3>
+<!--inicio corpo modelos de formularios-->
+
+
+                <form class="pure-form">
+                    <fieldset>
+                        <legend>Um formulário in-line compacto</legend>
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Senha" />
+                        <label for="default-remember">
+                            <input type="checkbox" id="default-remember" />Lembre de mim
+                        </label>
+                        <button type="submit" class="pure-button pure-button-primary">Entrar</button>
+                    </fieldset>
+                </form>
+                <br><br>
+                
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+                        <legend>Formulário empilhado</legend>
+                        <label for="stacked-email">Email</label>
+                        <input type="email" id="stacked-email" placeholder="Email" />
+                        <span class="pure-form-message">Este é um campo obrigatório.</span>
+                        <label for="stacked-password">Senha</label>
+                        <input type="password" id="stacked-password" placeholder="Senha" />
+                        <label for="stacked-state">Estado</label>
+                        <select id="stacked-state">
+                            <option>CE</option>
+                            <option>MG</option>
+                            <option>SP</option>
+                            <option>RJ</option>
+                            <option>PA</option>
+                        </select>
+                        <label for="stacked-remember" class="pure-checkbox">
+                            <input type="checkbox" id="stacked-remember" /> Lembre de mim
+                        </label>
+                        <button type="submit" class="pure-button pure-button-primary">Entrar</button>
+                    </fieldset>
+                </form>
+                <br><br>
+                <form class="pure-form pure-form-aligned">
+                    <fieldset>
+                        <legend>Formulário Alinhado</legend> 
+                        <div class="pure-control-group">
+                            <label for="aligned-name">Usuário</label>
+                            <input type="text" id="aligned-name" placeholder="Username" />
+                            <span class="pure-form-message-inline">Este é um campo obrigatório.</span>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="aligned-password">Senha</label>
+                            <input type="password" id="aligned-password" placeholder="Password" />
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="aligned-email">Email</label>
+                            <input type="email" id="aligned-email" placeholder="Email Address" />
+                        </div>
+                        <div class="pure-controls">
+                            <label for="aligned-cb" class="pure-checkbox">
+                                <input type="checkbox" id="aligned-cb" />Eu li os termos e condições
+                            </label>
+                            <button type="submit" class="pure-button pure-button-primary">Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <br><br>
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+                        <legend>Formulário de múltiplas colunas (com grades puras)</legend>
+                        <div class="pure-g">
+                            <div class="pure-u-1-3 pure-u-md-1-3">
+                                <label for="multi-first-name">Primeiro nome</label>
+                                <input type="text" id="multi-first-name" class="pure-u-23-24" />
+                            </div>
+                            <div class="pure-u-1-3 pure-u-md-1-3">
+                                <label for="multi-last-name">Último nome</label>
+                                <input type="text" id="multi-last-name" class="pure-u-23-24" />
+                            </div>
+                            <div class="pure-u-1-3 pure-u-md-1-3">
+                                <label for="multi-email">E-Mail</label>
+                                <input type="email" id="multi-email" class="pure-u-23-24" required="" />
+                            </div>
+                            <div class="pure-input-1-3 pure-u-md-1-3">
+                                <label for="multi-city">Cidade</label>
+                                <input type="text" id="multi-city" class="pure-u-23-24" />
+                            </div>
+                            <div class="pure-u-1 pure-u-md-1-3">
+                                <label for="multi-state">Estado</label>
+                                <select id="multi-state" class="pure-input-1-4">
+                                    <option>MG</option>
+                                    <option>SP</option>
+                                    <option>RJ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label for="multi-terms" class="pure-checkbox">
+                            <input type="checkbox" id="multi-terms" /> Eu li os termos e condições
+                        </label>
+                        <button type="submit" class="pure-button pure-button-primary">Enviar</button>
+                    </fieldset>
+                </form>
+                <br><br>
+                <form class="pure-form">
+                    <fieldset class="pure-group">
+                        <legend>Entradas agrupadas</legend>
+                        <input type="text" class="pure-input-1-2" placeholder="Nome do Usuario" />
+                        <input type="text" class="pure-input-1-2" placeholder="Digite sua senha" />
+                        <input type="email" class="pure-input-1-2" placeholder="Email" />
+                    </fieldset>
+                    <fieldset class="pure-group">
+                        <input type="text" class="pure-input-1-2" placeholder="Um título" />
+                        <textarea class="pure-input-1-2" placeholder="Área de texto"></textarea>
+                    </fieldset>
+                    <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Entrar</button>
+                </form>
+                <br><br>
+            
+                <form class="pure-form">
+                    <legend>Dimensionamento de entrada</legend>
+                    <input type="text" class="pure-input-1" placeholder=".pure-input-1" />
+                    <br />
+                    <input type="text" class="pure-input-2-3" placeholder=".pure-input-2-3" />
+                    <br />
+                    <input type="text" class="pure-input-1-2" placeholder=".pure-input-1-2" />
+                    <br />
+                    <input type="text" class="pure-input-1-3" placeholder=".pure-input-1-3" />
+                    <br />
+                    <input type="text" class="pure-input-1-4" placeholder=".pure-input-1-4" />
+                    <br />
+                </form>
+                <br><br>
+                <form class="pure-form">
+                    <legend>Entradas arredondadas</legend>
+                    <input type="text" class="pure-input-rounded" />
+                    <button type="submit" class="pure-button">Procurar</button>
+                </form>
+                <br><br>
+                <form class="pure-form">
+                    <legend>Caixas de seleção e rádios</legend>
+                    <label for="checkbox-radio-option-one" class="pure-checkbox">
+                        <input type="checkbox" id="checkbox-radio-option-one" value="" /> Aqui temos a 1ª opção.
+                    </label>
+                    <label for="checkbox-radio-option-one" class="pure-checkbox">
+                        <input type="checkbox" id="checkbox-radio-option-one" value="" /> Aqui temos a 2ª opção.
+                    </label>
+                    <label for="checkbox-radio-option-two" class="pure-radio">
+                        <input type="radio" id="checkbox-radio-option-two" name="optionsRadios" value="option1" checked="" /> Você pode escolher este...
+                    </label>
+                    <label for="checkbox-radio-option-three" class="pure-radio">
+                        <input type="radio" id="checkbox-radio-option-three" name="optionsRadios" value="option2" /> ...Ou este.
+                    </label>
+                </form>
+
+<!--fim corpo modelos de formularios-->
+                 
+            </div>
+        </div>
+    </div>
+    <!--fim corpo site-->
+
+<!--inicio rodape-->
+<footer>&copy; 2023 - Todos os direitos reservados. DEV IF Sucateiros.</footer>
+<!--fim rodape-->
+
+</body>
+</html>
